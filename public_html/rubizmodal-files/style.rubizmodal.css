@@ -1,0 +1,43 @@
+/*************************************************************************************
+*
+*	Дизайн:     http://SergeyChunkevich.com
+*	На статью:  http://sergeychunkevich.com/RuBizModal-Article
+*	
+**************************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic);
+
+
+/* ================================= RuBizModal ================================= */
+#RuBizModal { width:740px; position:fixed; font-family:Helvetica, Arial; display:none;	    margin: -14px -54px;}
+#RuBizModal .RuBizModal_main { width:900px; background: #f1f1f1; position:relative; overflow:auto; }
+	#RuBizModal #close { position:absolute; left:720px; width:19px; height:19px; }
+	#RuBizModal #close #rbm-close { margin-left: 142px; width:19px; height:19px; border:0; display:inline-block;
+		background:url('data:image/gif;base64,R0lGODlhEgASAKIHAHd3d93d3bu7u4iIiKqqqu7u7v///////yH5BAEAAAcALAAAAAASABIAAANReLrc/pCJR6AwVWJ3zVbdB3pkFRpFphCkx5LF4AxtG0NDUd8R7emyyOmnaoQKuhLnh8wxiwIdMiDLIQsBAIMwDR4GAay2QaA2wGNHcZGOuA8JADs='); }
+	#RuBizModal .box1 { width:370px; float:left; color:#333; }
+		#RuBizModal .korobka  { position:relative; float:left; width:320px; z-index: 3; }  /* Рекомендуется: width:370px; height:390px */
+		#RuBizModal .arrows { position:absolute; left:284px; height:100%; width:120px; z-index: 2;}
+		#RuBizModal .sharik{position:absolute;left:350px;top: 83px;}
+	#RuBizModal .box2 { margin-left: 100px; background:#f1f1f1; color:#333; width:380px; float:left; text-align:center; padding:10px 0 2px 20px; }
+		#RuBizModal .call1 { font-size:27px; color:#bf0000; padding:11px 15px 10px 15px; line-height:22px/20px;text-transform: uppercase;  }
+			#RuBizModal .call1 .vodniy{font-size: 14px; color: #000; text-transform: uppercase;}
+			#RuBizModal .call1 .red{font-size: 22px; color: red; text-transform: uppercase;}
+			#RuBizModal .call2 .red2{ color: red; text-transform: uppercase;}
+			#RuBizModal .call2 .parag{font-size:14px; padding-top: 15px; font-style: italic;}
+			#RuBizModal .call1 .strongA{color: red; font-size: 36px; margin-top: 30px;}
+			#RuBizModal .call1 .strong { color:#000; margin-bottom:5px; font-family: 'Roboto', sans-serif; font-size: 22px; font-weight: bold; }
+		#RuBizModal .call2 { font:20px/20px 'Robot', sans-serif;font-weight: bold; padding:0 15px 10px 15px; line-height: 20px;}
+		#RuBizModal input.name { background:#fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAATCAIAAAD02QHhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAF4SURBVHjazJQ7a8JQGIaTmNALBExNhDo6SQbp7m/o4D+yi9CpKEh/gJR2diooKF6GzMEqgZyGFtumENLGHGM0yddBEKtBG9uh73Te7xwe+G6HBADi16KIvxAdGn1S1atS6SSROMtmz/P53RjYEFKUi0JBlmUAUBTlulKBXQqhXBaLuq4vbbVa3UkJqwtFJZPJpeN5fo/qfoiiuOp9z5u8PESlwPtIW/Wj58djjotK4Q4PvjXOtU3i6DRyjwCg1bhfHO5ub5zPt72qSxDdVgMhNJ1Ou+32qzGJPC/1er1Wq60FO52Opmk/mhdJkobD4ZanzWbTMIxtlHK5vD1z3/cBQNd1jPHmLQkAvV4vlUrF43GWZWk6ZLPG47FlWbZtC4IwGAxyuVzINsqyTJJkv9+PxWKz2QxjzLIsx3Gu63qeZ1kWRVE0Tc/n83Q6bZpm+E6LoihJkqqqGOMgCDDGDMNkMpkgCBBCjuMwDLMACYKwNtkLkf/ol/oaAMwq+1/0FhE+AAAAAElFTkSuQmCC') no-repeat center right; }
+		#RuBizModal input.email { background:#fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAATCAIAAAD02QHhAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAHPSURBVHja3JQ9bxNBEIZnd3b39u5857Nx/BHJcgBTUOAiDS1VpCD/XItUSLRIpkAUNIjEciQ7xhE+x7LvfHs7FEiYwCEs4YopR7PPvO/s7DIign8ODoeIw1DEZDK5uHglpQRg+x2hLMvOz1+2Wq0fKTYcDu+MevH82f6d37z9UHWp1+vttHDOr2/i4WVSdvKTuivFHz1mxl7NNnGK1zdxvVu95wgAQhfLHt4uNtNF2q7pk7r3O+Jqth7PE4nsQVQKXfx1LgAgkGuFtVCZnMbzzfVt0m16zYr+XjH9mnyaronoKHQEMkehQF5AUYJpyckwLXno+R/Hy9fvZw+bpc6RN/qyvpyumhX9tB1aS5ZIS64EK7hpIbgjwXWQMRjNVtVAnp02fI3vPi98jWenjWogR7MVY+A66EgQolgLdxXcrfJ5nLRrXlRSJqdHDf9x0yeC3NKT42Cx2s7jTa2sowBUIUUiJGlujOkeh1Jwa0nwnWaJDADqka6U1DxeJ2kuEQoo2zRTgnUaIQEQEWDx+kkhOjpMjd2mme/qexRrbSUKHMEBgAEw9pcNdgSvRIEx5uckWy6Xg8Egz3PO93pT1lpE7Pf7QRDsKP/dz3AYyrcBAKAWqyJbdSW0AAAAAElFTkSuQmCC') no-repeat center right; no-repeat center right }
+			#RuBizModal input[type="text"] { color:#aaa; font-size:15px; margin-bottom:10px; padding:8px 10px; width:65%;
+				border:2px solid #bbb; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+			#RuBizModal .submit{background:#bf0000; color:#fff; cursor:pointer; 
+				font-size:18px; font-weight:bold; margin:0; padding:8px 15px; text-shadow:1px 1px #000;
+				border:2px solid #fff; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+			#RuBizModal input[type="submit"] { background:#bf0000; color:#fff; cursor:pointer; 
+				font-size:18px; font-weight:bold; margin:0; padding:8px 15px; text-shadow:1px 1px #000;
+				border:2px solid #fff; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; }
+				#RuBizModal input[type="submit"]:hover { background:#CC1414;}
+		#RuBizModal .confident { background:url('data:image/png;base64,R0lGODlhEAAQAOZNAI5TAP///1s3AP//AP/OAHF6hX+LmPu5Ev/jAP/4AP/pAISRnv/iAP/VAH+NmlhogOv0///uAP+mLf/RAFhpgOnq7uny///WAP/0AP+iH//AC/+4APP09f/ICObp7urs7v+vJNzg5HWAi8bM0s/a6P/ZAHB7hWVve/+jH//hAP/CCc3S2P/iAv/UAMjN1P+wI/+nLVdof/+9D9nd4v/TAOTp7Fdnfv/KBv/zAP+/DXF7hf/1APu4Ef+7AHV/i//tAGNsef/yAP/eAPP19uHm6v/hAsvQ1v/XAP/dAGVvfGNteuXq7crV5P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAE0ALAAAAAAQABAAAAebgE2CggaFhoOIggUcAY0BQwWJih8zDgsLDiEVkYkFHiMiJjo+RjWciEBLLieCSStESpI2EEwUgg8kFjGJAL2+v72IAI7EjgDCKD0XOAMDQRMbGceDADAaJTvNGA0yEtOCAC8qRxEJCT8tOSDfTQA8Nw0ICgoMNB0H7AAHLEIpCAgMkBTBh0gAgYMIEwpIJKCZQ4cLJQmYSHEiokAAOw==') no-repeat; padding:0 0 0 20px; margin: 20px 0 0 0; color:#999; font-size:13px; display:inline-block; }
+#simplemodal-overlay { background-color:#000; cursor:wait; }
+/* ================================= / RuBizModal ================================= */
+
